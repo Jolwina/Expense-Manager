@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.androidprojectvij.HistoryActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="10dp"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="HISTORY"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:src="@drawable/square" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayoutSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="41dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_shape_capsule"
+            android:onClick="goIncome"
+            android:padding="20dp"
+            android:text="Income History"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_shape_capsule"
+            android:onClick="goExpense"
+            android:padding="20dp"
+            android:text="Expense History"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/btn_shape_capsule"
+            android:onClick="goReminder"
+            android:padding="20dp"
+            android:text="Reminder History"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

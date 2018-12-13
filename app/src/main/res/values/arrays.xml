@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="expenditureType">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Transfer</item>
+        <item>Rent</item>
+        <item>Medical</item>
+        <item>Other</item>
+    </array>
+
+
+    <array name="paymentMethod">
+        <item>Cash</item>
+        <item>Check</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </array>
+
+    <array name="xaxis">
+        <item>Expense</item>
+        <item>Transport</item>
+        <item>Transfer</item>
+        <item>Rent</item>
+        <item>Medical</item>
+        <item>Cash</item>
+        <item>Check</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </array>
+
+    <array name="yaxis">
+        <item>Yearly</item>
+        <item>Transport</item>
+        <item>Transfer</item>
+        <item>Rent</item>
+        <item>Medical</item>
+        <item>Cash</item>
+        <item>Check</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </array>
+
+</resources>

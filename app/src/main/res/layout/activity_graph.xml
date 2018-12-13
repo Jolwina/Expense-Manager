@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.androidprojectvij.GraphActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="10dp"
+                android:src="@drawable/graph" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="GRAPH"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:src="@drawable/square" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/idPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="445dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"></com.github.mikephil.charting.charts.PieChart>
+    </RelativeLayout>
+
+
+</RelativeLayout>

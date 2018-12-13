@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.androidprojectvij.ExpenseActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/ex1"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="EXPENSE"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
+
+
+                <EditText
+                    android:id="@+id/ExpenseAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/editTextBG"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+
+                <EditText
+                    android:id="@+id/ExpenseDate"
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/editTextBG"
+                    android:hint="Expense Date"
+                    android:inputType="date"
+                    android:paddingLeft="10dp"
+                    android:focusable="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/DateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:hint="Date" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+
+                <EditText
+                    android:id="@+id/ExpenseTime"
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/editTextBG"
+                    android:hint="Expense Time"
+                    android:paddingLeft="10dp"
+                    android:focusable="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/TimeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Time" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="14dp"-->
+                    <!--android:background="@color/editTextBG"-->
+                    <!--android:hint="Email"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <EditText
+                    android:id="@+id/ExpenseDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/editTextBG"
+                    android:hint="Expense Description"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="30dp">
+
+        <Spinner
+            android:id="@+id/ExpensePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/editTextBG"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/paymentMethod"
+            android:hint="@string/income_paymentmode"
+            android:paddingRight="0dp"
+            android:prompt="@string/spin"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/drop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout6"
+        android:layout_alignRight="@+id/relativeLayout6"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp">
+
+        <Spinner
+            android:id="@+id/ExpenseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/expenditureType"
+            android:hint="@string/income_paymentmode"
+            android:paddingRight="0dp"
+            android:background="@color/editTextBG"
+            android:prompt="@string/spin"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/drop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout7"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:id="@+id/ExpenseReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="94dp"
+            android:layout_marginRight="94dp"
+            android:background="@drawable/roundcorner"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/paymentMethod"
+            android:hint="RESET"
+            android:padding="5dp"
+            android:prompt="@string/spin"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary1"/>
+
+
+        <Button
+            android:id="@+id/ExpenseSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:layout_toStartOf="@+id/ExpenseReset"
+            android:layout_toLeftOf="@+id/ExpenseReset"
+            android:background="@drawable/roundcorner"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/expenditureType"
+            android:hint="SAVE"
+            android:padding="5dp"
+            android:prompt="@string/spin"
+            android:textColor="@color/colorPrimary1"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

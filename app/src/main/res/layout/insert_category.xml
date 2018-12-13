@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Category"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/category_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter category"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/roundcorner"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/expenditureType"
+            android:hint="ADD"
+            android:padding="5dp"
+            android:prompt="@string/spin"
+            android:textColor="@color/colorPrimary1"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/roundcorner"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/expenditureType"
+            android:hint="CANCEL"
+            android:padding="5dp"
+            android:prompt="@string/spin"
+            android:textColor="@color/colorPrimary1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

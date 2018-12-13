@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Update Category"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/roundcorner"
+            android:drawSelectorOnTop="false"
+            android:entries="@array/expenditureType"
+            android:hint="update"
+            android:padding="5dp"
+            android:prompt="@string/spin"
+            android:textColor="@color/colorPrimary1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:textSize="1sp" />
+
+    </LinearLayout>
+</LinearLayout>

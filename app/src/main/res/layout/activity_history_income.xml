@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.androidprojectvij.HistoryActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="10dp"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="INCOME HISTORY"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:src="@drawable/square" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/relativeLayout">
+
+
+
+        <TableRow
+            android:id="@+id/tabla_cabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableLayout
+            android:id="@+id/tabla_cuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:paddingRight="0dp"
+                    android:text="Category"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="Price"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</RelativeLayout>

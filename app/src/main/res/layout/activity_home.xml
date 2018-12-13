@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/rootLayout"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary1">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="bottom|center"
+                    android:textColor="#2a737b"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/income3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/color1"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/history"-->
+                <!--android:id="@+id/historyId"/>-->
+
+                <TextView
+                    android:id="@+id/incomeTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Income"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color2"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/settingsId"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/settings" />-->
+
+                <TextView
+                    android:id="@+id/expenseTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Expense"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/color3"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/incomeId"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/income" />-->
+
+                <TextView
+                    android:id="@+id/historyTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="History"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color4"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/profileId"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/profile" />-->
+
+                <TextView
+                    android:id="@+id/reminderTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Reminder"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/color5"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/reminderId"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/reminder" />-->
+
+                <TextView
+                    android:id="@+id/graphTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Graph"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/color6"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/expenseId"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:src="@drawable/expense" />-->
+
+                <TextView
+                    android:id="@+id/settingsTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Settings"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="2.6">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:drawableLeft="@drawable/ic_logout"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Logout"-->
+                <!--android:textSize="17sp" />-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--tools:context="com.example.user.androidprojectvij.ActivityHome">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/expenseId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/expense" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/historyId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/history" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/incomeId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/income" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/profileId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/profile" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/reminderId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/reminder" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/settingsId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="100dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/settings" />&ndash;&gt;-->
+
+
+
+
+<!--</RelativeLayout>-->
